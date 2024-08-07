@@ -43,6 +43,7 @@
     "@octokit/rest": "21.0.1",
     "@octokit/webhooks-types": "7.5.1",
     "cheerio": "^1.0.0-rc.12",
+    "runs-on-cache": "git://github.com/runs-on/cache#v4",
     "semver": "7.6.3",
     "string-argv": "0.3.2",
     "typed-rest-client": "2.0.2",

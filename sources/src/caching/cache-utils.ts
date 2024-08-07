@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import * as cache from '@actions/cache'
+import * as cache from 'runs-on-cache'
 import * as exec from '@actions/exec'
 
 import * as crypto from 'crypto'
@@ -112,7 +112,7 @@ export async function tryDelete(file: string): Promise<void> {
             return
         } catch (error) {
             if (attempt === maxAttempts) {
-                core.warning(`Failed to delete ${file}, which will impact caching. 
+                core.warning(`Failed to delete ${file}, which will impact caching.
 It is likely locked by another process. Output of 'jps -ml':
 ${await getJavaProcesses()}`)
                 throw error

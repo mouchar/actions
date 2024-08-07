@@ -1,4 +1,4 @@
-import * as cache from '@actions/cache'
+import * as cache from 'runs-on-cache'
 
 export const DEFAULT_CACHE_ENABLED_REASON = `[Cache was enabled](https://github.com/gradle/actions/blob/main/docs/setup-gradle.md#caching-build-state-between-jobs). Action attempted to both restore and save the Gradle User Home.`
 

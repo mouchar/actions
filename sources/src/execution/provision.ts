@@ -4,7 +4,7 @@ import * as path from 'path'
 import which from 'which'
 import * as httpm from '@actions/http-client'
 import * as core from '@actions/core'
-import * as cache from '@actions/cache'
+import * as cache from 'runs-on-cache'
 import * as exec from '@actions/exec'
 import * as toolCache from '@actions/tool-cache'
 
